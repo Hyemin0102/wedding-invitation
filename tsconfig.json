@@ -17,6 +17,7 @@
       "@/types/*": ["./types/*"]
     },
 
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,

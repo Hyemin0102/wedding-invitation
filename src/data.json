@@ -1,42 +1,42 @@
 {
   "greeting": {
-    "title": "장세모 \uD83D\uDC8D 황네모\n결혼합니다!",
-    "message": "저희 결혼합니다.\n\n서로에게 알맞은 온도로 따뜻하던 우리.\n부부로서 첫걸음을 내딛는 그 설렘의 순간에\n소중한 분들을 초대합니다.",
+    "title": "Hyemin Jo \uD83D\uDC8D Gwangrae Baek\n",
+    "message": "저희 두 사람의 작은 만남이\n사랑의 결실을 이루어\n소중한 결혼식을 올리게 되었습니다.\n\u200B\n평생 서로 귀하게 여기며\n첫 마음 그대로 존중하고 배려하며 살겠습니다.\n\u200B\n오로지 믿음과 사랑을 약속하는 날\n오셔서 축복해 주시면 더 없는 기쁨으로\n간직하겠습니다.",
     "host": {
       "groom": {
-        "name": "세모",
+        "name": "백광래",
         "relation": "아들",
         "parents": [
           {
             "relation": "아버지",
-            "name": "장아빠"
+            "name": "백평배"
           },
           {
             "relation": "어머니",
-            "name": "이엄마"
+            "name": "한혜숙"
           }
         ]
       },
       "bride": {
-        "name": "네모",
+        "name": "조혜민",
         "relation": "딸",
         "parents": [
           {
             "relation": "아버지",
-            "name": "황아빠"
+            "name": "조용구"
           },
           {
             "relation": "어머니",
-            "name": "이엄마"
+            "name": "최영미"
           }
         ]
       }
     },
-    "eventDetail": "2024년 2월 17일 (토) 14:00\n아펠가모 공덕 라로브홀"
+    "eventDetail": "2024년 10월 13일 (일) 13:40\n파티오벨라"
   },
   "hostInfo": [
     {
-      "host": "신랑측",
+      "host": "신랑측 축하하기",
       "accountInfo": [
         {
           "name": "장세모",
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "host": "신부측",
+      "host": "신부측 축하하기",
       "accountInfo": [
         {
           "name": "황네모",
@@ -87,12 +87,12 @@
     }
   ],
   "mapInfo": {
-    "address1": "아펠가모 공덕 라로브홀",
-    "address2": "서울 마포구 마포대로 92\n효성해링턴스퀘어 B동 7층\n02-2197-0230",
-    "naverMap": "https://map.naver.com/p/directions/-/14132311.1099497,4514956.9078363,%EC%95%84%ED%8E%A0%EA%B0%80%EB%AA%A8%20%EA%B3%B5%EB%8D%95,1929913788,PLACE_POI/-/transit?c=15.00,0,0,0,dh",
-    "kakaoMap": "https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=,,489503,1123003&rt1=&rt2=%EC%95%84%ED%8E%A0%EA%B0%80%EB%AA%A8%20%EA%B3%B5%EB%8D%95%EC%A0%90&rtIds=,630786038",
-    "lat": 37.54222,
-    "lon": 126.952708
+    "address1": "파티오벨라",
+    "address2": "경기 안양시 동안구\n시민대로159번길 25 1층\n031-386-0077",
+    "naverMap": "https://map.naver.com/p/directions/-/14131734.2857443,4493693.2197259,%ED%8C%8C%ED%8B%B0%EC%98%A4%EB%B2%A8%EB%9D%BC,1572417432,PLACE_POI/-/transit?c=15.00,0,0,0,dh",
+    "kakaoMap": "https://map.kakao.com/link/map/1731754423",
+    "lat": 37.3905777925779,
+    "lon": 126.947562354355
   },
   "locationInfo": [
     {

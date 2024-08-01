@@ -1,16 +1,15 @@
 import styled from '@emotion/styled';
-import data from 'data.json';
 import Address from './Address.tsx';
 import Map from './Map.tsx';
 import MapButtons from './MapButtons.tsx';
-import { Caption, PointTitle } from '@/components/Text.tsx';
+import {Caption, PointTitle} from '@/components/Text.tsx';
 
 const Location = () => {
-  const { mapInfo } = data;
+
   return (
     <LocationWrapper>
-      <PointTitle>{mapInfo.address1}</PointTitle>
-      <Caption textAlign={'center'}>{mapInfo.address2}</Caption>
+      <PointTitle><img src="/location_title.png" alt="파티오벨라"/></PointTitle>
+      <Caption><img src="/location_address.png" alt="주소"/></Caption>
       <Map />
       <MapButtons />
       <Address />

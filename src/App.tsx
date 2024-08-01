@@ -6,10 +6,12 @@ import Account from '@/layout/Account/Account.tsx';
 import Container from '@/layout/Container.tsx';
 import FloatingBar from '@/layout/FloatingBar/FloatingBar.tsx';
 import GalleryWrap from '@/layout/Gallery/GalleryWrap.tsx';
-import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
+// import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
 import Invitation from '@/layout/Invitation/Invitation.tsx';
 import Location from '@/layout/Location/Location.tsx';
 import Main from '@/layout/Main/Main.tsx';
+import Callendar from "@/layout/Callendar/Callendar.tsx";
+import Quiz from "@/layout/Quiz/Quiz.tsx";
 
 function App() {
   const ncpClientId = import.meta.env.VITE_APP_NAVERMAPS_CLIENT_ID;
@@ -43,26 +45,29 @@ function App() {
           <Main />
         </Wrapper>
         <Wrapper>
-          <Heading1>모시는 글</Heading1>
           <Invitation />
         </Wrapper>
-        <Wrapper ref={galleryRef}>
-          <Heading1>Gallery</Heading1>
+        <Wrapper>
+          <Callendar/>
+        </Wrapper>
+        {/*<Wrapper ref={galleryRef}>*/}
+        <Wrapper>
+          <Heading1><img style={{width:'140px'}} src="/gallery.png" alt="갤러리"/></Heading1>
           <GalleryWrap />
         </Wrapper>
         <Wrapper>
-          <Heading1>마음 전하실 곳</Heading1>
           <Account />
         </Wrapper>
         <Wrapper>
-          <Heading1>오시는 길</Heading1>
+          <Heading1 style={{paddingRight:'8px'}}><img src="/location.png" alt="지도"/></Heading1>
           <Location />
         </Wrapper>
-        <Wrapper>
-          <Heading1>신랑 신부에게</Heading1>
-          <Guestbook />
+        <Wrapper style={{fontFamily:'Ownglyph_UNZ-Rg'}}>
+          <Heading1>퀴즈</Heading1>
+          <Quiz/>
+          {/*<Guestbook />*/}
         </Wrapper>
-        <FloatingBar isVisible={isVisible} />
+        <FloatingBar isVisible={isVisible}/>
       </Container>
     </NavermapsProvider>
   );

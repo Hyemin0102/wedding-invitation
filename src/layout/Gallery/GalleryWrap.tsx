@@ -25,7 +25,6 @@ const GalleryWrap = () => {
 export default GalleryWrap;
 
 const ContentsWrap = styled.div`
-  margin: 30px 0;
   box-sizing: border-box;
   overflow: hidden;
   display: flex;
@@ -37,9 +36,10 @@ const ImageMoreWrap = styled.div<{ isMoreView: boolean }>`
   position: relative;
   max-height: ${(props) =>
     props.isMoreView
-      ? ''
+      ? '1200vh'
       : '60vh'}; /* isMoreView 상태가 true일 때는 높이 제한 없이, false일 때는 195px로 작게 보이도록 */
   overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
 `;
 
 const WhiteGradientOverlay = styled.div`
@@ -57,10 +57,10 @@ const WhiteGradientOverlay = styled.div`
 const PlusButton = styled.div`
   width: 100%;
   box-sizing: border-box;
-  padding: 6px 12px;
-  font-size: 1rem;
+
   align-items: center;
   border-radius: 4px;
   border: 1px solid #dfdfdf;
   cursor: pointer;
+  font-size: 26px;
 `;
