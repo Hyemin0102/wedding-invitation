@@ -34,6 +34,7 @@ export const ModalContent = styled.div`
 export const QuizItemWrapper = styled.div`
   display: flex;
   gap: 20px;
+  justify-content: center;
   min-height: 200px;
   width: 80%;
   margin: auto;

@@ -51,4 +51,5 @@ export default Quiz;
 
 const QuizStyle = styled.div`
   font-size: 2rem;
+  width: 100%;
 `
