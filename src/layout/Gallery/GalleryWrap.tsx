@@ -57,10 +57,10 @@ const WhiteGradientOverlay = styled.div`
 const PlusButton = styled.div`
   width: 100%;
   box-sizing: border-box;
-
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #dfdfdf;
+  background-color: #fff4d6;
   cursor: pointer;
   font-size: 26px;
+  border: 1px solid #ededed;
 `;

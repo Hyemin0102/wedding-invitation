@@ -44,24 +44,30 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
     // });
   };
 
-  const jsConfetti = new JSConfetti();
   const handleScroll = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const jsConfetti = new JSConfetti();
+
+
   return (
-    <Nav isVisible={isVisible}>
+    <Nav>
+        {isVisible && (
+          <>
+            <Button onClick={handleCopy}>
+              <Share fill="#e88ca6"/>
+              공유
+            </Button>
+            <Button onClick={handleScroll}>
+            <Upward fill="#e88ca6"/>
+            위로
+            </Button>
+          </>
+        )}
       <Button onClick={handleCount}>
         <Heart fill="#e88ca6" />
         {/*{count || ''}*/}
-      </Button>
-      <Button onClick={handleCopy}>
-        <Share fill="#e88ca6" />
-        공유
-      </Button>
-      <Button onClick={handleScroll}>
-        <Upward fill="#e88ca6" />
-        위로
       </Button>
     </Nav>
   );
@@ -69,14 +75,14 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
 
 export default FloatingBar;
 
-const Nav = styled.nav<{ isVisible: boolean }>`
-  min-width: 280px;
+const Nav = styled.nav`
+  //min-width: 280px;
+  width: fit-content;
   position: fixed;
   bottom: 30px;
-  left: 0;
-  right: 0;
+  right: 20px;
   align-items: center;
   justify-content: center;
   gap: 5px;
-  display: ${(props) => (props.isVisible ? 'flex' : 'none')};
+  display: flex;
 `;

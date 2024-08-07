@@ -61,7 +61,6 @@ const AccountWrap = ({
 };
 
 const Wrapper = styled.div`
-  font-family: 'SUITE-Regular';
   padding: 10px 0;
   border-bottom: 1px solid #dfdfdf;
   &:last-of-type {
@@ -78,12 +77,13 @@ const Info = styled.div`
   align-items: center;
   gap: 5px;
   margin: 5px 0;
+  font-size: 20px;
 `;
 const Relation = styled.span`
   color: #44484d;
 `;
 const Name = styled.span`
-  font-size: 1rem
+  font-size: 22px;
 `;
 
 const Details = styled.div`
@@ -92,7 +92,7 @@ const Details = styled.div`
   justify-content: space-between;
 `;
 
-const AccountInfo = styled.div``;
+const AccountInfo = styled.div`  font-size: 18px;`;
 const CopyButton = styled.button`
   border: none;
   border-radius: 5px;

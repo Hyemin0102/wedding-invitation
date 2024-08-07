@@ -17,12 +17,16 @@ const Quiz: React.FC = () => {
   };
 
   const handleNextStep = (correct: boolean) => {
+    console.log('???',correct)
     if (correct) {
+      console.log('111')
       setScore(score + 1);
     }
     if (step! < 4) {
+      console.log('222')
       setStep(step! + 1);
     } else {
+      console.log('333')
       setStep(5);
     }
   };

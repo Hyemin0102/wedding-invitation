@@ -48,7 +48,7 @@ const QuizModal: React.FC<QuizModalProps> = ({  step, quizType, onNext, onReset,
       <ModalContent>
         {step === 0 &&
           <QuizStartBtn onClick={() => handleAnswer(true)}>퀴즈 시작!</QuizStartBtn>}
-        {step  !==0 && step <= 2 && (
+        {step  !==0 && step <= 3 && (
           <>
             <h2>{questions[quizType][step -1 ].question}</h2>
             {step > 0 && (
@@ -60,7 +60,7 @@ const QuizModal: React.FC<QuizModalProps> = ({  step, quizType, onNext, onReset,
 
           </>
         )}
-        {step === 3 && (
+        {step > 3 && (
           <>
             <h2>결과</h2>
             <p>맞춘 개수: {score}</p>
