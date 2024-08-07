@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { NavermapsProvider } from 'react-naver-maps';
+import {NavermapsProvider} from 'react-naver-maps';
 import { Heading1 } from '@/components/Text.tsx';
 import Wrapper from '@/components/Wrapper.tsx';
 import Account from '@/layout/Account/Account.tsx';
@@ -13,6 +13,8 @@ import Main from '@/layout/Main/Main.tsx';
 import Callendar from "@/layout/Callendar/Callendar.tsx";
 import Quiz from "@/layout/Quiz/Quiz.tsx";
 
+
+
 function App() {
   const ncpClientId = import.meta.env.VITE_APP_NAVERMAPS_CLIENT_ID;
   const [isVisible, setIsVisible] = useState(false);
@@ -24,6 +26,7 @@ function App() {
       window.removeEventListener('scroll', checkScrollPosition);
     };
   }, []);
+
 
   const checkScrollPosition = () => {
     if (galleryRef.current) {
@@ -50,7 +53,6 @@ function App() {
         <Wrapper>
           <Callendar/>
         </Wrapper>
-
         <Wrapper ref={galleryRef}>
           <Heading1><img style={{width:'140px'}} src="/gallery.png" alt="갤러리"/></Heading1>
           <GalleryWrap />

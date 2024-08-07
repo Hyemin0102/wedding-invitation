@@ -29,4 +29,13 @@ export const Paragraph = styled.p`
 export const Caption = styled.p<{ textAlign?: string }>`
   width: 80%;
   margin: auto;
+  display: flex;
+  gap: 6px;
 `;
+
+export const AddressCopyIcon = styled.div`
+  width: 40px;
+  img {
+    display: block;
+  }
+`
