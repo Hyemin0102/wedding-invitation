@@ -50,7 +50,8 @@ function App() {
         <Wrapper>
           <Callendar/>
         </Wrapper>
-        <Wrapper ref={galleryRef}>
+        <Wrapper>
+        {/*<Wrapper ref={galleryRef}>*/}
           <Heading1><img style={{width:'140px'}} src="/gallery.png" alt="갤러리"/></Heading1>
           <GalleryWrap />
         </Wrapper>
