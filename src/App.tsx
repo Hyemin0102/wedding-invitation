@@ -70,8 +70,8 @@ function App() {
           <Quiz/>
           {/*<Guestbook />*/}
         </Wrapper>
-        <div >
-          <img style={{width: "150px"}} src="/footer.png" alt="마지막"/>
+        <div style={{marginTop: "-60px"}}>
+          <img style={{width: "100px", marginLeft: "20px"}} src="/footer.png" alt="마지막"/>
         </div>
         <FloatingBar isVisible={isVisible}/>
       </Container>
