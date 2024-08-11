@@ -8,7 +8,7 @@ const Container = styled.div`
   //background-color: #ffffff;
 
   background-color: #FBF8EF;
-  padding: 20px 0 180px 0;
+  padding: 20px 0 120px 0;
   margin: auto;
   display: flex;
   flex-direction: column;
