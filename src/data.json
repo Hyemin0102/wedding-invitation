@@ -37,6 +37,7 @@
   "hostInfo": [
     {
       "host": "🤵🏻 신랑측 축하하기",
+      "imageUrl": "/account_m.png",
       "accountInfo": [
         {
           "name": "백광래",
@@ -62,6 +63,7 @@
     },
     {
       "host": "👰🏻‍♀️ 신부측 축하하기",
+      "imageUrl": "/account_w.png",
       "accountInfo": [
         {
           "name": "조혜민",

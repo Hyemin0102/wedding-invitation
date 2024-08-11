@@ -58,6 +58,7 @@ function App() {
           <GalleryWrap />
         </Wrapper>
         <Wrapper>
+          <div><img style={{width:'60px'}} src="/flowers.png" alt="축하"/></div>
           <Account />
         </Wrapper>
         <Wrapper>

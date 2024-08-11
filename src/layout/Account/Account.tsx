@@ -9,7 +9,7 @@ const Account = () => {
     <HostInfoWrapper>
       {hostInfo.map((host) => {
         return (
-          <Accordion title={host.host} key={host.host}>
+          <Accordion title={<img src={host.imageUrl} alt={host.host} />} key={host.host}>
             {host.accountInfo.map((account) => {
               return (
                 <AccountWrap

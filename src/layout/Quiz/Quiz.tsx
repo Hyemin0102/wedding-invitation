@@ -6,30 +6,33 @@ import {QuizItemWrapper} from "@/layout/Quiz/QuizStyle.tsx";
 
 
 const Quiz: React.FC = () => {
-
   const [step, setStep] = useState<number | null>(null);
   const [score, setScore] = useState(0);
   const [quizType, setQuizType] = useState<number | null>(null);
-
+  console.log('score',score)
+  console.log('step',step)
   const startQuiz = (quizType: number) => {
+    //퀴즈타입 1이면 신랑, 2면 신부, step 0으로 세팅
     setQuizType(quizType);
     setStep(0);
   };
 
   const handleNextStep = (correct: boolean) => {
-    console.log('???',correct)
-    if (correct) {
-      console.log('111')
+
+    if (correct) { //정답 맞으면 score에 1더함
       setScore(score + 1);
     }
-    if (step! < 4) {
-      console.log('222')
-      setStep(step! + 1);
-    } else {
-      console.log('333')
-      setStep(5);
+    if (step! < 4) { //step 이 0-시작, 1~3까지는 step 하나씩 더함
+      setStep(step!+ 1);
+    } else { //step 4 부터는 step을 4로 업데이트
+      setStep(4);
     }
   };
+
+  //시작 클릭하면 step 1
+  const handleStart = () => {
+    setStep(1)
+  }
 
   const handleResetQuiz = () => {
     setStep(null);
@@ -44,8 +47,9 @@ const Quiz: React.FC = () => {
         <div onClick={() => startQuiz(1)}>신랑 퀴즈풀기</div>
         <div onClick={() => startQuiz(2)}>신부 퀴즈풀기</div>
       </QuizItemWrapper>
+      {/*step 과 퀴즈타입이 널값 아니면 퀴즈모달 나옴*/}
       {step !== null  && quizType !== null && (
-        <QuizModal step={step} quizType={quizType} score={score} onNext={handleNextStep} onReset={handleResetQuiz} />
+        <QuizModal step={step} quizType={quizType} score={score} onStart={handleStart} onNext={handleNextStep} onReset={handleResetQuiz} />
       )}
     </QuizStyle>
   );

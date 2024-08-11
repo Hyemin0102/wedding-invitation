@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import ExpandMore from '@/assets/icons/expand_more.svg?react';
 
 interface IAccordionProps {
-  title: string;
+  title: ReactNode;
   children: ReactNode;
 }
 const Accordion = ({ title, children }: IAccordionProps) => {
@@ -16,7 +16,7 @@ const Accordion = ({ title, children }: IAccordionProps) => {
   return (
     <AccordionWrapper>
       <AccordionHeader isActive={isOpen} onClick={toggleAccordion}>
-        <p>{title}</p>
+        {typeof title === 'string' ? <p>{title}</p> : title}
 
         <span>
           <ExpandMore fill="gray" />
@@ -47,6 +47,7 @@ const AccordionHeader = styled.div<{ isActive: boolean }>`
   padding: 10px 15px;
   cursor: pointer;
   background-color: #fff4d6;
+  padding-left: 40px;
   //border: 1px solid #ededed;
   & > p {
     color: #44484d;
@@ -60,6 +61,12 @@ const AccordionHeader = styled.div<{ isActive: boolean }>`
     user-select: none;
     transition: all 0.3s ease;
     transform: ${(props) => (props.isActive ? 'rotate(180deg)' : undefined)};
+  }
+  
+  > img {
+    width: 100px;
+    height: 26px;
+    margin: auto;
   }
 `;
 

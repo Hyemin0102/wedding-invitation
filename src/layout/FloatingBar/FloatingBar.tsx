@@ -56,17 +56,17 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
         {isVisible && (
           <>
             <Button onClick={handleCopy}>
-              <Share fill="#e88ca6"/>
+              <Share fill="#8c8c8c"/>
               공유
             </Button>
             <Button onClick={handleScroll}>
-            <Upward fill="#e88ca6"/>
+            <Upward fill="#8c8c8c"/>
             위로
             </Button>
           </>
         )}
       <Button onClick={handleCount}>
-        <Heart fill="#e88ca6" />
+        <Heart fill="#F64B4B" />
         {/*{count || ''}*/}
       </Button>
     </Nav>
