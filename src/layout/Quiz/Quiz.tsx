@@ -9,8 +9,7 @@ const Quiz: React.FC = () => {
   const [step, setStep] = useState<number | null>(null);
   const [score, setScore] = useState(0);
   const [quizType, setQuizType] = useState<number | null>(null);
-  console.log('score',score)
-  console.log('step',step)
+
   const startQuiz = (quizType: number) => {
     //퀴즈타입 1이면 신랑, 2면 신부, step 0으로 세팅
     setQuizType(quizType);
@@ -44,13 +43,20 @@ const Quiz: React.FC = () => {
     <QuizStyle>
       <div>⭐️ 우정 테스트 ⭐️</div>
       <QuizItemWrapper>
-        <div onClick={() => startQuiz(1)}>신랑 퀴즈풀기</div>
-        <div onClick={() => startQuiz(2)}>신부 퀴즈풀기</div>
+        <div onClick={() => startQuiz(1)}>
+          <img src="/gr_child.png" alt="애기광래"/>
+        </div>
+        <div onClick={() => startQuiz(2)}>
+          <img src="/hm_child.png" alt="애기혜민"/>
+        </div>
       </QuizItemWrapper>
       {/*step 과 퀴즈타입이 널값 아니면 퀴즈모달 나옴*/}
       {step !== null  && quizType !== null && (
         <QuizModal step={step} quizType={quizType} score={score} onStart={handleStart} onNext={handleNextStep} onReset={handleResetQuiz} />
       )}
+
+        {/*<QuizModal step={1} quizType={2} score={score} onStart={handleStart} onNext={handleNextStep} onReset={handleResetQuiz} />*/}
+
     </QuizStyle>
   );
 };

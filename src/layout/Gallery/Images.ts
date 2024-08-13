@@ -4,12 +4,12 @@ import image03 from '@/assets/images/1-3.jpeg'
 import image04 from '@/assets/images/1-4.jpeg'
 import image05 from '@/assets/images/2-1.jpeg'
 import image06 from '@/assets/images/2-2.jpeg'
-import image07 from '@/assets/images/3-1.jpeg'
+//import image07 from '@/assets/images/3-1.jpeg'
 import image08 from '@/assets/images/3-2.jpeg'
 import image09 from '@/assets/images/3-3.jpeg'
 import image10 from '@/assets/images/4-1.jpeg'
 import image11 from '@/assets/images/4-2.jpeg'
-import image12 from '@/assets/images/5-1.jpeg'
+// import image12 from '@/assets/images/5-1.jpeg'
 import image13 from '@/assets/images/5-2.jpeg'
 import image14 from '@/assets/images/6-1.jpeg'
 import image15 from '@/assets/images/6-2.jpeg'
@@ -43,9 +43,6 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
     alt: 'image06',
     source: image06,
   },{
-    alt: 'image07',
-    source: image07,
-  },{
     alt: 'image08',
     source: image08,
   },{
@@ -57,9 +54,6 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   },{
     alt: 'image11',
     source: image11,
-  },{
-    alt: 'image12',
-    source: image12,
   },{
     alt: 'image13',
     source: image13,

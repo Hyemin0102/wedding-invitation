@@ -42,6 +42,17 @@ img {
   font-style: normal;
 }
 
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
 /*@font-face {*/
 /*  font-family: 'ONE-Mobile-POP';*/
 /*  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');*/

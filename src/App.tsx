@@ -66,14 +66,13 @@ function App() {
           <Location />
         </Wrapper>
         <Wrapper style={{fontFamily:'Ownglyph_UNZ-Rg'}}>
-          <Heading1>퀴즈</Heading1>
           <Quiz/>
           {/*<Guestbook />*/}
         </Wrapper>
         <div style={{marginTop: "-60px"}}>
           <img style={{width: "100px", marginLeft: "20px"}} src="/footer.png" alt="마지막"/>
         </div>
-        <FloatingBar isVisible={isVisible}/>
+        <FloatingBar isVisible={isVisible}/>.00.
       </Container>
     </NavermapsProvider>
   );

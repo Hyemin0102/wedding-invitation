@@ -19,8 +19,8 @@ export const ModalOverlay = styled.div`
 `;
 
 export const ModalContent = styled.div`
-  background: white;
-  padding: 20px;
+  background: #ffffff;
+  padding: 20px 20px 30px;
   border-radius: 8px;
   width: 300px;
   min-height: 200px;
@@ -40,19 +40,114 @@ export const QuizItemWrapper = styled.div`
   margin: auto;
   
   > div {
-    margin-top: 15px;
-    width: 100%;
-    border: 1px solid;
-    border-radius: 8px;
+  
     cursor: pointer;
+    &:nth-child(1) {
+      width: 80%;
+      transform: rotate(6deg);
+      //animation: shakeRight 1.5s infinite ease-in-out;
+    }
+    &:nth-child(2) {
+      width: 100%;
+      transform: rotate(-3deg);
+      margin-top: 35px;
+      //animation: shakeLeft 1.5s infinite ease-in-out;
+    }
+    @keyframes shakeLeft {
+      0% {
+        transform: rotate(-3deg);
+      }
+      50% {
+        transform: rotate(3deg);
+      }
+      100% {
+        transform: rotate(-3deg);
+      }
+    }
+
+    @keyframes shakeRight {
+      0% {
+        transform: rotate(3deg);
+      }
+      50% {
+        transform: rotate(-3deg);
+      }
+      100% {
+        transform: rotate(3deg);
+      }
+    }
   }
 `;
 
 export const QuizStartBtn = styled.button`
   background: none;
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   border: none;
   font-size: 36px;
   font-family: 'Ownglyph_UNZ-Rg', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #222;
 `
+export const QuizContentWrapper = styled.div`
+  height: inherit;
+  width: 100%;
+  position: relative;
+`;
+export const QuizStep = styled.div`
+  text-align: right;
+  font-size: 18px;
+  
+  >span {
+    color: #9D9D9D;
+    font-size: 16px;
+  }
+`
+
+export const QuizContent = styled.div`
+  font-size: 28px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+`
+
+export const BtnWrapper = styled.div`
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  >button {
+    width: 90px;
+    height: 90px;
+    border: none;
+    border-radius: 10px;
+    font-family: Ownglyph_UNZ-Rg, sans-serif;
+  }
+`;
+export const TrueBtn = styled.button`
+  background-color: #E8F3FF;
+  >div:nth-of-type(1){
+    color: #3182F6;
+    font-size: 28px;
+  }
+
+  >div:nth-of-type(2){
+    font-size: 24px;
+    color: #222;
+  }
+`;
+export const FalseBtn = styled.button`
+  background-color: #FFEEEE;
+  >div:nth-of-type(1){
+    color: #EF4452;
+    font-size: 28px;
+  }
+
+  >div:nth-of-type(2){
+    color: #222;
+    font-size: 24px;
+  }
+`;
+

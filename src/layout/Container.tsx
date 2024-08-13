@@ -12,7 +12,7 @@ const Container = styled.div`
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 250px;
   
   @media screen and (min-width: 500px) {
       width: 500px;

@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div style={{position:"relative", padding:"0 20px"}}>
       <MainImg src={mainImg} />
-      <RibbonImg><img src="/yellow-ribbon.png" alt="노란리본"/></RibbonImg>
+      {/*<RibbonImg><img src="/yellow-ribbon.png" alt="노란리본"/></RibbonImg>*/}
       <SubTitleImg>
         <div>
           <img src="/name.png" alt="이름"/>
@@ -30,12 +30,12 @@ const MainImg = styled.img`
   padding-top: 34px;
 `;
 
-const RibbonImg = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0 20px;
-`
+// const RibbonImg = styled.div`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   padding: 0 20px;
+// `
 
 // const MainTitle = styled.p`
 //   //font-family: ONE-Mobile-POP, serif;
