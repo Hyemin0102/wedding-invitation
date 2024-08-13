@@ -22,7 +22,7 @@ const styles = {
     color: 'white',
     borderRadius: '5px',
     zIndex: 1000,
-    fontSize: '16px',
+    fontSize: '20px',
     padding: '5px',
     animation: 'slideUp 0.5s ease-out'
   },
