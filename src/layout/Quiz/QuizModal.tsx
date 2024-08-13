@@ -45,10 +45,10 @@ const QuizModal: React.FC<QuizModalProps> = ({  step, quizType, onStart, onNext,
     setSelectedAnswer(userAnswer);
     const correctAnswer = questions[quizType][step].answer;
     if (userAnswer === correctAnswer) {
-      setToastMessage('정답입니다!');
+      setToastMessage('정답이에요😘');
       setIsCorrect(true);  // 정답
     } else {
-      setToastMessage('오답입니다!');
+      setToastMessage('정답이 아니에요🥲');
       setIsCorrect(false);  // 정답
     }
   };

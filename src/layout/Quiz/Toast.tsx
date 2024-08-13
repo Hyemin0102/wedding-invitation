@@ -14,7 +14,7 @@ const Toast: React.FC<ToastProps> = ({ children }) => {
 const styles = {
   toast: {
     position: 'absolute' as 'absolute',
-    width: '70%',
+    width: '80%',
     bottom: '-17px',
     left: '50%',
     transform: 'translateX(-50%)',
@@ -22,7 +22,7 @@ const styles = {
     color: 'white',
     borderRadius: '5px',
     zIndex: 1000,
-    fontSize: '20px',
+    fontSize: '24px',
     padding: '5px',
     animation: 'slideUp 0.5s ease-out'
   },
