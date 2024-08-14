@@ -8,11 +8,11 @@ const Container = styled.div`
   //background-color: #ffffff;
 
   background-color: #FBF8EF;
-  padding: 20px 0 120px 0;
+  padding: 0 0 120px 0;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 250px;
+  gap: 200px;
   
   @media screen and (min-width: 500px) {
       width: 500px;

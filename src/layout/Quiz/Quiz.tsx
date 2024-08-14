@@ -33,26 +33,31 @@ const Quiz: React.FC = () => {
     setStep(1)
   }
 
+  //완료 텍스트 클릭 시
   const handleResetQuiz = () => {
     setStep(null);
     setScore(0);
     setQuizType(null);
   };
 
+  const handleBackStart = () => {
+    setStep(1);
+    setScore(0);
+  }
+
   return (
     <QuizStyle>
-      <div>⭐️ 우정 테스트 ⭐️</div>
       <QuizItemWrapper>
-        <div onClick={() => startQuiz(1)}>
-          <img src="/gr_child.png" alt="애기광래"/>
-        </div>
         <div onClick={() => startQuiz(2)}>
-          <img src="/hm_child.png" alt="애기혜민"/>
+          <img src="/test_hm.png" alt="애기혜민"/>
+        </div>
+        <div onClick={() => startQuiz(1)}>
+          <img src="/test_gr.png" alt="애기광래"/>
         </div>
       </QuizItemWrapper>
       {/*step 과 퀴즈타입이 널값 아니면 퀴즈모달 나옴*/}
       {step !== null  && quizType !== null && (
-        <QuizModal step={step} quizType={quizType} score={score} onStart={handleStart} onNext={handleNextStep} onReset={handleResetQuiz} />
+        <QuizModal step={step} quizType={quizType} score={score} onStart={handleStart} onNext={handleNextStep} onReset={handleResetQuiz} onBack={handleBackStart} />
       )}
 
         {/*<QuizModal step={1} quizType={2} score={score} onStart={handleStart} onNext={handleNextStep} onReset={handleResetQuiz} />*/}
@@ -66,4 +71,5 @@ export default Quiz;
 const QuizStyle = styled.div`
   font-size: 2rem;
   width: 100%;
+  margin-top: 20px;
 `

@@ -18,12 +18,13 @@ export const ModalOverlay = styled.div`
   align-items: center;
 `;
 
+//모달창 전체
 export const ModalContent = styled.div`
   background: #ffffff;
-  padding: 20px 20px 30px;
+  padding: 30px 20px 30px;
   border-radius: 8px;
   width: 300px;
-  min-height: 200px;
+  min-height: 400px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -33,67 +34,46 @@ export const ModalContent = styled.div`
 
 export const QuizItemWrapper = styled.div`
   display: flex;
-  gap: 20px;
   justify-content: center;
-  min-height: 200px;
-  width: 80%;
+  //min-height: 400px;
+  width: 90%;
   margin: auto;
   
   > div {
-  
     cursor: pointer;
-    &:nth-child(1) {
-      width: 80%;
-      transform: rotate(6deg);
-      //animation: shakeRight 1.5s infinite ease-in-out;
-    }
-    &:nth-child(2) {
-      width: 100%;
-      transform: rotate(-3deg);
-      margin-top: 35px;
-      //animation: shakeLeft 1.5s infinite ease-in-out;
-    }
-    @keyframes shakeLeft {
-      0% {
-        transform: rotate(-3deg);
-      }
-      50% {
-        transform: rotate(3deg);
-      }
-      100% {
-        transform: rotate(-3deg);
-      }
-    }
-
-    @keyframes shakeRight {
-      0% {
-        transform: rotate(3deg);
-      }
-      50% {
-        transform: rotate(-3deg);
-      }
-      100% {
-        transform: rotate(3deg);
-      }
-    }
   }
 `;
 
-export const QuizStartBtn = styled.button`
+export const QuizStartWrapper = styled.div`
   background: none;
   width: 100%;
-  min-height: 200px;
+  min-height: 400px;
   border: none;
-  font-size: 36px;
+  font-size: 28px;
   font-family: 'Ownglyph_UNZ-Rg', sans-serif;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px 0;
   gap: 8px;
   color: #222;
+  
+`;
+
+export const QuizStartBtn = styled.button`
+  border: none;
+  background-color: #393533;
+  color: #ffffff;
+  width: 180px;
+  line-height: 50px;
+  border-radius: 100px;
+  font-family: 'Ownglyph_UNZ-Rg', sans-serif;
+  font-size: 24px;
+  align-self: flex-end;
 `
 export const QuizContentWrapper = styled.div`
-  height: inherit;
+  min-height: 400px;
   width: 100%;
   position: relative;
 `;
@@ -108,19 +88,20 @@ export const QuizStep = styled.div`
 `
 
 export const QuizContent = styled.div`
-  font-size: 28px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  word-break: keep-all;
 `
 
 export const BtnWrapper = styled.div`
   display: flex;
-  gap: 14px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   >button {
-    width: 90px;
-    height: 90px;
+    width: 130px;
+    height: 130px;
     border: none;
     border-radius: 10px;
     font-family: Ownglyph_UNZ-Rg, sans-serif;
@@ -130,7 +111,7 @@ export const TrueBtn = styled.button`
   background-color: #E8F3FF;
   >div:nth-of-type(1){
     color: #3182F6;
-    font-size: 28px;
+    font-size: 63px;
   }
 
   >div:nth-of-type(2){
@@ -142,12 +123,48 @@ export const FalseBtn = styled.button`
   background-color: #FFEEEE;
   >div:nth-of-type(1){
     color: #EF4452;
-    font-size: 28px;
+    font-size: 63px;
   }
 
   >div:nth-of-type(2){
     color: #222;
     font-size: 24px;
+  }
+`;
+
+export const QuizResultWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const Score = styled.div`
+  background-color: #E8F3FF;
+  color: #3182F6;
+  border-radius: 100px;
+  width: 120px;
+  line-height: 40px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+`;
+export const ResultImg = styled.div`
+  width: 120px;
+`;
+export const ResultMemo = styled.div`
+  font-size: 20px;
+  margin-bottom: 20px;
+`;
+export const RerultBtn = styled.div`
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+  > svg {
+    width: 10px;
   }
 `;
 

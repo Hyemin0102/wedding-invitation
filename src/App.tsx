@@ -6,7 +6,6 @@ import Account from '@/layout/Account/Account.tsx';
 import Container from '@/layout/Container.tsx';
 import FloatingBar from '@/layout/FloatingBar/FloatingBar.tsx';
 import GalleryWrap from '@/layout/Gallery/GalleryWrap.tsx';
-// import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
 import Invitation from '@/layout/Invitation/Invitation.tsx';
 import Location from '@/layout/Location/Location.tsx';
 import Main from '@/layout/Main/Main.tsx';
@@ -66,13 +65,16 @@ function App() {
           <Location />
         </Wrapper>
         <Wrapper style={{fontFamily:'Ownglyph_UNZ-Rg'}}>
+          <div style={{width: '80%'}}><img src="/test_title.png" alt="우정테스트"/></div>
           <Quiz/>
-          {/*<Guestbook />*/}
         </Wrapper>
+        {/*<Wrapper>*/}
+        {/*  <Guestbook />*/}
+        {/*</Wrapper>*/}
         <div style={{marginTop: "-60px"}}>
           <img style={{width: "100px", marginLeft: "20px"}} src="/footer.png" alt="마지막"/>
         </div>
-        <FloatingBar isVisible={isVisible}/>.00.
+        <FloatingBar isVisible={isVisible}/>
       </Container>
     </NavermapsProvider>
   );

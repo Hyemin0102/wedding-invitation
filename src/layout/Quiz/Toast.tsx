@@ -15,7 +15,7 @@ const styles = {
   toast: {
     position: 'absolute' as 'absolute',
     width: '80%',
-    bottom: '-17px',
+    bottom: '30px',
     left: '50%',
     transform: 'translateX(-50%)',
     backgroundColor: 'rgba(0, 0, 0, 0.6)',

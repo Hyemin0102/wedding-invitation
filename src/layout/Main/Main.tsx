@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 // import data from 'data.json';
-import mainImg from '@/assets/images/2-1.jpeg';
+import mainImg from '@/assets/images/2-1.png';
 
 const Main = () => {
   // const { greeting } = data;
   return (
-    <div style={{position:"relative", padding:"0 20px"}}>
+    <div style={{position:"relative"}}>
       <MainImg src={mainImg} />
       {/*<RibbonImg><img src="/yellow-ribbon.png" alt="노란리본"/></RibbonImg>*/}
       <SubTitleImg>
@@ -26,8 +26,8 @@ export default Main;
 const MainImg = styled.img`
   border-radius: 200px 200px 0 0;
   //width: 90%;
-  max-width: 450px;
-  padding-top: 34px;
+  //max-width: 450px;
+  padding-top: 20px;
 `;
 
 // const RibbonImg = styled.div`
