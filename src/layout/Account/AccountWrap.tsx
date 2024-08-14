@@ -1,23 +1,20 @@
 import styled from '@emotion/styled';
 import Copy from '@/assets/icons/copy.svg?react';
-import kakaopay from '@/assets/icons/kakaopay.png?url';
-import toss from '@/assets/icons/toss.png?url';
+
 
 interface IAccountProps {
   name: string;
   relation: string;
   bank: string;
   account: string;
-  kakaopayAccount?: string;
-  tossAccount?: string;
+  phone: string
 }
 const AccountWrap = ({
   name,
   relation,
   bank,
   account,
-  kakaopayAccount,
-  tossAccount,
+  phone
 }: IAccountProps) => {
   const handleCopy = () => {
     navigator.clipboard.writeText(account).then(
@@ -33,8 +30,22 @@ const AccountWrap = ({
   return (
     <Wrapper>
       <Info>
-        <Relation>{relation}</Relation>
-        <Name>{name}</Name>
+        <div>
+          <Relation>{relation}</Relation>
+          <Name>{name}</Name>
+        </div>
+        <div>
+          <SendSMS>
+            <a href={`sms:${phone}`}>
+              <img src="/message.png" alt="문자보내기" />
+            </a>
+          </SendSMS>
+          <Contact>
+            <a href={`tel:${phone}`}>
+              <img src="/call.png" alt="전화하기" />
+            </a>
+          </Contact>
+        </div>
       </Info>
       <Details>
         <AccountInfo>
@@ -44,18 +55,6 @@ const AccountWrap = ({
           <Copy fill="#dfdfdf" />
         </CopyButton>
       </Details>
-      <AccountLinks>
-        {kakaopayAccount && (
-          <AccountButton href={kakaopayAccount} target="_blank" rel="noreferrer">
-            <KakaopayImg src={kakaopay} alt="kakaopay" />
-          </AccountButton>
-        )}
-        {tossAccount && (
-          <AccountButton href={tossAccount} target="_blank" rel="noreferrer">
-            <TossImg src={toss} alt="toss" />
-          </AccountButton>
-        )}
-      </AccountLinks>
     </Wrapper>
   );
 };
@@ -78,12 +77,32 @@ const Info = styled.div`
   gap: 5px;
   margin: 5px 0;
   font-size: 20px;
+  justify-content: space-between;
+  > div:nth-of-type(1) {
+    display:flex;
+    align-items: center;
+    gap: 4px;
+  }
+  > div:nth-of-type(2) {
+    display:flex;
+    align-items: center;
+    gap: 4px;
+  }
 `;
 const Relation = styled.span`
-  color: #44484d;
+  color: #6b6b6b;
 `;
 const Name = styled.span`
   font-size: 22px;
+`;
+
+const Contact = styled.div`
+  width: 16px;
+  padding: 0 4px;
+`;
+
+const SendSMS = styled.div`
+  width: 20px;
 `;
 
 const Details = styled.div`
@@ -104,37 +123,6 @@ const CopyButton = styled.button`
   background: white;
 `;
 
-const AccountLinks = styled.div`
-  display: flex;
-  width: 100%;
-  gap: 2px;
-`;
 
-const AccountButton = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #dfdfdf;
-  border-radius: 5px;
-  margin: 5px 0;
-  padding: 0 0.8em;
-  width: inherit;
-  font-size: 0.7rem;
-  cursor: pointer;
-  gap: 2px;
-  color: #1a1a1a;
-  text-decoration: none;
-  outline: none;
-  box-shadow: none;
-  background: white;
-`.withComponent('a');
-
-const KakaopayImg = styled.img`
-  width: 50px;
-`;
-
-const TossImg = styled.img`
-  width: 70px;
-`;
 
 export default AccountWrap;

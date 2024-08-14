@@ -44,20 +44,21 @@
           "relation": "신랑",
           "bank": "카카오뱅크",
           "account": "1234-56-789012",
-          "kakaopayAccount": "",
-          "tossAccount": ""
+          "phone": "010-8765-3639"
         },
         {
           "name": "백평배",
           "relation": "아버지",
           "bank": "농협",
-          "account": "123-45-678901"
+          "account": "123-45-678901",
+          "phone": "010-8765-3639"
         },
         {
           "name": "한혜숙",
           "relation": "어머니",
           "bank": "농협",
-          "account": "123-45-678901"
+          "account": "123-45-678901",
+          "phone": "010-8765-3639"
         }
       ]
     },
@@ -68,22 +69,23 @@
         {
           "name": "조혜민",
           "relation": "신부",
-          "bank": "토스뱅크",
-          "account": "1234-5678-9012",
-          "kakaopayAccount": "",
-          "tossAccount": ""
+          "bank": "신한은행",
+          "account": "110-483-946891",
+          "phone": "010-4906-7226"
         },
         {
           "name": "조용구",
           "relation": "아버지",
-          "bank": "농협",
-          "account": "123-45-678901"
+          "bank": "국민은행",
+          "account": "620601-01-526870",
+          "phone": "010-4906-7226"
         },
         {
           "name": "최영미",
           "relation": "어머니",
-          "bank": "농협",
-          "account": "123-45-678901"
+          "bank": "국민은행",
+          "account": "663302-01-111685",
+          "phone": "010-4906-7226"
         }
       ]
     }
