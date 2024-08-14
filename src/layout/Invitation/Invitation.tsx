@@ -5,9 +5,10 @@ import Host from '../Contact/Host.tsx';
 import { Paragraph } from '@/components/Text.tsx';
 
 const Invitation = () => {
-  const { greeting } = data;
+  //const { greeting } = data;
   return (
     <InvitationWrapper>
+      {/*<img src='/invitation.png' alt="초대문구" />*/}
       <Paragraph>
         <div>
           곁에서 매일 재워주고 싶은 사람을 만났습니다.
@@ -20,7 +21,6 @@ const Invitation = () => {
         </div>
         <div>그 시작의 자리에 소중한 분들을 초대합니다. </div>
         <div>귀한 걸음 함께해 주시면 행복한 마음으로 간직하겠습니다.</div>
-
       </Paragraph>
       <Host />
     </InvitationWrapper>
