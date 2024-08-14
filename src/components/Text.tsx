@@ -21,9 +21,12 @@ export const PointTitle = styled.div`
 export const Paragraph = styled.div`
   line-height: 2.2rem;
   white-space: pre-line;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background: #FEEEBB;
   padding: 14px;
+  word-break: keep-all;
+  margin: 0 20px 20px;
+  border-radius: 30px;
 `;
 
 export const Caption = styled.div<{ textAlign?: string }>`
