@@ -5,9 +5,9 @@ import data from 'data.json';
 // import { realtimeDb } from 'firebase.ts';
 import JSConfetti from 'js-confetti';
 //import Heart from '@/assets/icons/heart_plus.svg?react';
-import Share from '@/assets/icons/share.svg?react';
-import Upward from '@/assets/icons/upward.svg?react';
-import Button from '@/components/Button.tsx';
+// import Share from '@/assets/icons/share.svg?react';
+// import Upward from '@/assets/icons/upward.svg?react';
+// import Button from '@/components/Button.tsx';
 
 const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const { emojis } = data;
