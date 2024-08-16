@@ -10,11 +10,11 @@ const Quiz: React.FC = () => {
   const [score, setScore] = useState(0);
   const [quizType, setQuizType] = useState<number | null>(null);
 
-  const startQuiz = (quizType: number) => {
-    //퀴즈타입 1이면 신랑, 2면 신부, step 0으로 세팅
-    setQuizType(quizType);
-    setStep(0);
-  };
+  // const startQuiz = (quizType: number) => {
+  //   //퀴즈타입 1이면 신랑, 2면 신부, step 0으로 세팅
+  //   setQuizType(quizType);
+  //   setStep(0);
+  // };
 
   const handleNextStep = (correct: boolean) => {
 
