@@ -12,7 +12,7 @@ const Main = () => {
       {/*<RibbonImg><img src="/yellow-ribbon.png" alt="노란리본"/></RibbonImg>*/}
       <SubTitleImg>
         <div>
-          <img src="/name.png" alt="이름"/>
+          <img src="/main_name.png" alt="이름"/>
         </div>
         <div>
           <img src="/date.png" alt="날짜"/>

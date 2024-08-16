@@ -48,7 +48,9 @@ const Quiz: React.FC = () => {
   return (
     <QuizStyle>
       <QuizItemWrapper>
-        <img src="/child.png" alt="어린이사진"/>
+        <img style={{
+          width: '90%',
+          marginRight: 24}} src="/child.png" alt="어린이사진"/>
         {/*<div onClick={() => startQuiz(2)}>*/}
         {/*  <img src="/test_hm.png" alt="애기혜민"/>*/}
         {/*</div>*/}

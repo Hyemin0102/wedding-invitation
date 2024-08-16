@@ -55,14 +55,20 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
     <Nav>
         {isVisible && (
           <>
-            <Button onClick={handleCopy}>
-              <Share fill="#8c8c8c"/>
-              공유
-            </Button>
-            <Button onClick={handleScroll}>
-            <Upward fill="#8c8c8c"/>
-            위로
-            </Button>
+            <div style={{width: '50px'}} onClick={handleCopy}>
+              <img src="/share_btn.png" alt="공유"/>
+            </div>
+            <div style={{width: '50px'}} onClick={handleScroll}>
+              <img src="/top_btn.png" alt="위로"/>
+            </div>
+            {/*<Button onClick={handleCopy}>*/}
+            {/*  <Share fill="#8c8c8c"/>*/}
+            {/*  공유*/}
+            {/*</Button>*/}
+            {/*<Button onClick={handleScroll}>*/}
+            {/*<Upward fill="#8c8c8c"/>*/}
+            {/*위로*/}
+            {/*</Button>*/}
           </>
         )}
       <div style={{width: '50px'}} onClick={handleCount}>
