@@ -4,7 +4,7 @@ import data from 'data.json';
 // import { increment, onValue, ref, update } from 'firebase/database';
 // import { realtimeDb } from 'firebase.ts';
 import JSConfetti from 'js-confetti';
-import Heart from '@/assets/icons/heart_plus.svg?react';
+//import Heart from '@/assets/icons/heart_plus.svg?react';
 import Share from '@/assets/icons/share.svg?react';
 import Upward from '@/assets/icons/upward.svg?react';
 import Button from '@/components/Button.tsx';
@@ -65,10 +65,13 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
             </Button>
           </>
         )}
-      <Button onClick={handleCount}>
-        <Heart fill="#F64B4B" />
-        {/*{count || ''}*/}
-      </Button>
+      <div style={{width: '50px'}} onClick={handleCount}>
+        <img src="/like_btn.png" alt="하트"/>
+      </div>
+      {/*<Button onClick={handleCount}>*/}
+      {/*  <Heart fill="#F64B4B" />*/}
+      {/*  /!*{count || ''}*!/*/}
+      {/*</Button>*/}
     </Nav>
   );
 };
