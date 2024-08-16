@@ -48,12 +48,13 @@ const Quiz: React.FC = () => {
   return (
     <QuizStyle>
       <QuizItemWrapper>
-        <div onClick={() => startQuiz(2)}>
-          <img src="/test_hm.png" alt="애기혜민"/>
-        </div>
-        <div onClick={() => startQuiz(1)}>
-          <img src="/test_gr.png" alt="애기광래"/>
-        </div>
+        <img src="/child.png" alt="어린이사진"/>
+        {/*<div onClick={() => startQuiz(2)}>*/}
+        {/*  <img src="/test_hm.png" alt="애기혜민"/>*/}
+        {/*</div>*/}
+        {/*<div onClick={() => startQuiz(1)}>*/}
+        {/*  <img src="/test_gr.png" alt="애기광래"/>*/}
+        {/*</div>*/}
       </QuizItemWrapper>
       {/*step 과 퀴즈타입이 널값 아니면 퀴즈모달 나옴*/}
       {step !== null  && quizType !== null && (
