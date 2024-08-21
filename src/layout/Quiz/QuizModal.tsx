@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from 'react';
+import {useRef, useState, useEffect} from 'react';
 import {
   ModalOverlay,
   ModalContent,
@@ -15,9 +15,8 @@ import {
   ResultImg,
   ResultMemo,
   RerultBtn
-} from './QuizStyle.tsx';
-import Toast from "@/layout/Quiz/Toast.tsx";
-//import Toast from "@/layout/Quiz/Toast.tsx";
+} from './QuizStyle';
+import Toast from "@/layout/Quiz/Toast";
 
 
 interface QuizModalProps {
@@ -35,7 +34,8 @@ const QuizModal: React.FC<QuizModalProps> = ({  step, onStart, onNext, onReset,o
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
-  const overlayRef = useRef<HTMLDivElement>(null);
+
+  const overlayRef = useRef<HTMLDivElement | null>(null);
 
   let resultText = '';
   let resultImageSrc = '';

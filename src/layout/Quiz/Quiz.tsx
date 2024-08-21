@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled from "@emotion/styled";
 import QuizModal from "@/layout/Quiz/QuizModal.tsx";
 import {QuizItemWrapper} from "@/layout/Quiz/QuizStyle.tsx";
