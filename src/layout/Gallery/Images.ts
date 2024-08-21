@@ -1,32 +1,32 @@
-import image01 from '@/assets/images/wedding/1.jpg'
-import image02 from '@/assets/images/wedding/2.jpeg'
-import image03 from '@/assets/images/wedding/3.jpg'
-import image04 from '@/assets/images/wedding/4.jpg'
-import image05 from '@/assets/images/wedding/5.jpg'
-import image06 from '@/assets/images/wedding/6.jpg'
+import image01 from '@/assets/images/wedding/1.png'
+import image02 from '@/assets/images/wedding/2.png'
+import image03 from '@/assets/images/wedding/3.png'
+import image04 from '@/assets/images/wedding/4.png'
+import image05 from '@/assets/images/wedding/5.png'
+import image06 from '@/assets/images/wedding/6.png'
 import image07 from '@/assets/images/wedding/7.jpeg'
 import image08 from '@/assets/images/wedding/8.jpeg'
-import image09 from '@/assets/images/wedding/9.jpg'
-import image10 from '@/assets/images/wedding/10.jpg'
+import image09 from '@/assets/images/wedding/9.png'
+import image10 from '@/assets/images/wedding/10.png'
 import image11 from '@/assets/images/wedding/11.jpeg'
-import image12 from '@/assets/images/wedding/12.jpg'
-import image13 from '@/assets/images/wedding/13.jpg'
+import image12 from '@/assets/images/wedding/12.png'
+import image13 from '@/assets/images/wedding/13.png'
 import image14 from '@/assets/images/wedding/14.jpeg'
-import image15 from '@/assets/images/wedding/15.jpg'
-import image16 from '@/assets/images/wedding/16.jpg'
-import image17 from '@/assets/images/wedding/17.jpg'
-import image18 from '@/assets/images/wedding/18.jpg'
-import image19 from '@/assets/images/wedding/19.jpg'
-import image20 from '@/assets/images/wedding/20.jpg'
-import image21 from '@/assets/images/wedding/21.jpg'
-import image22 from '@/assets/images/wedding/22.jpg'
-import image23 from '@/assets/images/wedding/23.jpg'
-import image24 from '@/assets/images/wedding/24.jpg'
-//import image25 from '@/assets/images/wedding/25.jpg'
-import image26 from '@/assets/images/wedding/26.jpg'
-import image27 from '@/assets/images/wedding/27.jpg'
-import image28 from '@/assets/images/wedding/28.jpg'
-import image29 from '@/assets/images/wedding/29.jpg'
+import image15 from '@/assets/images/wedding/15.png'
+import image16 from '@/assets/images/wedding/16.png'
+import image17 from '@/assets/images/wedding/17.png'
+import image18 from '@/assets/images/wedding/18.png'
+import image19 from '@/assets/images/wedding/19.png'
+import image20 from '@/assets/images/wedding/20.png'
+import image21 from '@/assets/images/wedding/21.png'
+import image22 from '@/assets/images/wedding/22.png'
+import image23 from '@/assets/images/wedding/23.png'
+import image24 from '@/assets/images/wedding/24.png'
+import image25 from '@/assets/images/wedding/25.png'
+import image26 from '@/assets/images/wedding/26.png'
+import image27 from '@/assets/images/wedding/27.png'
+import image28 from '@/assets/images/wedding/28.png'
+import image29 from '@/assets/images/wedding/29.png'
 import image30 from '@/assets/images/wedding/30.jpeg'
 
 const images = [   /* 이미지 경로를 리스트로 저장 */
@@ -106,6 +106,9 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   },{
     alt: 'image24',
     source: image24,
+  },{
+    alt: 'image25',
+    source: image25,
   }
   ,{
     alt: 'image26',

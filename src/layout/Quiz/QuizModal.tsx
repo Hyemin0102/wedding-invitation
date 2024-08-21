@@ -89,8 +89,8 @@ const QuizModal: React.FC<QuizModalProps> = ({  step, onStart, onNext, onReset,o
 
   const questions = [
     { question: '퀴즈시작', answer: true },
-    { question: '광래와 혜민이는 고등학생 때 만났어요.', answer: true },
-    { question: '광래와 혜민이는 장거래 연애를 했어요.', answer: false },
+    { question: '광래와 혜민이는 고등학교 친구에요', answer: true },
+    { question: '광래와 혜민이는 장거래 연애를 했어요', answer: false },
     { question: '연애 전 혜민이가 광래를 쫓아다녔어요', answer: true },
   ];
 
