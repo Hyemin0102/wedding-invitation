@@ -21,7 +21,6 @@ import Toast from "@/layout/Quiz/Toast";
 
 interface QuizModalProps {
   step: number;
-  quizType: number;
   onNext: (correct: boolean) => void;
   onReset: () => void;
   onStart: () => void;
