@@ -8,13 +8,10 @@ import {QuizItemWrapper} from "@/layout/Quiz/QuizStyle.tsx";
 const Quiz: React.FC = () => {
   const [step, setStep] = useState<number | null>(null);
   const [score, setScore] = useState(0);
-  const [quizType, setQuizType] = useState<number | null>(null);
 
-  // const startQuiz = (quizType: number) => {
-  //   //퀴즈타입 1이면 신랑, 2면 신부, step 0으로 세팅
-  //   setQuizType(quizType);
-  //   setStep(0);
-  // };
+  const startQuiz = () => {
+    setStep(0);
+  };
 
   const handleNextStep = (correct: boolean) => {
 
@@ -37,7 +34,7 @@ const Quiz: React.FC = () => {
   const handleResetQuiz = () => {
     setStep(null);
     setScore(0);
-    setQuizType(null);
+    //setQuizType(null);
   };
 
   const handleBackStart = () => {
@@ -47,24 +44,15 @@ const Quiz: React.FC = () => {
 
   return (
     <QuizStyle>
-      <QuizItemWrapper>
+      <QuizItemWrapper onClick={startQuiz}>
         <img style={{
           width: '90%',
           marginRight: 24}} src="/child.png" alt="어린이사진"/>
-        {/*<div onClick={() => startQuiz(2)}>*/}
-        {/*  <img src="/test_hm.png" alt="애기혜민"/>*/}
-        {/*</div>*/}
-        {/*<div onClick={() => startQuiz(1)}>*/}
-        {/*  <img src="/test_gr.png" alt="애기광래"/>*/}
-        {/*</div>*/}
       </QuizItemWrapper>
-      {/*step 과 퀴즈타입이 널값 아니면 퀴즈모달 나옴*/}
-      {step !== null  && quizType !== null && (
-        <QuizModal step={step} quizType={quizType} score={score} onStart={handleStart} onNext={handleNextStep} onReset={handleResetQuiz} onBack={handleBackStart} />
+      {/*step 널값 아니면 퀴즈모달 나옴*/}
+      {step !== null && (
+        <QuizModal step={step} score={score} onStart={handleStart} onNext={handleNextStep} onReset={handleResetQuiz} onBack={handleBackStart} />
       )}
-
-        {/*<QuizModal step={1} quizType={2} score={score} onStart={handleStart} onNext={handleNextStep} onReset={handleResetQuiz} />*/}
-
     </QuizStyle>
   );
 };

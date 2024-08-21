@@ -30,13 +30,12 @@ interface QuizModalProps {
   score: number;
 }
 
-const QuizModal: React.FC<QuizModalProps> = ({  step, quizType, onStart, onNext, onReset,onBack, score }) => {
+const QuizModal: React.FC<QuizModalProps> = ({  step, onStart, onNext, onReset,onBack, score }) => {
   const [selectedAnswer, setSelectedAnswer] = useState<null | boolean>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
   const overlayRef = useRef<HTMLDivElement>(null);
-  const name = quizType === 1 ? '광래' : '혜민';
 
   let resultText = '';
   let resultImageSrc = '';
@@ -48,7 +47,7 @@ const QuizModal: React.FC<QuizModalProps> = ({  step, quizType, onStart, onNext,
     resultImageSrc = '/score_0.png';
     resultMemoText = (
       <>
-        <div>{name}님과 더 친해져볼까요?</div>
+        <div><span style={{color: '#1344EC'}}>광래♡혜민</span>님과 더 친해져볼까요?</div>
         <div>재도전하고 합격 부적 받아보세요!🍀</div>
       </>
     );
@@ -57,7 +56,7 @@ const QuizModal: React.FC<QuizModalProps> = ({  step, quizType, onStart, onNext,
     resultImageSrc = '/score_1.png';
     resultMemoText = (
       <>
-        <div>{name}님에 대해 조금 알고 계시네요!</div>
+        <div><span style={{color: '#1344EC'}}>광래♡혜민</span>님에 대해 조금 알고 계시네요!</div>
         <div>재도전하고 합격 부적 받아볼까요~?🍀</div>
       </>
     );
@@ -66,7 +65,7 @@ const QuizModal: React.FC<QuizModalProps> = ({  step, quizType, onStart, onNext,
     resultImageSrc = '/score_2.png';
     resultMemoText = (
       <>
-        <div>{name}님에 대해 거의 알고 계시네요!</div>
+        <div><span style={{color: '#1344EC'}}>광래♡혜민</span>님에 대해 거의 알고 계시네요!</div>
         <div>재도전하고 합격 부적 받아볼까요~?🍀</div>
       </>
     );
@@ -75,8 +74,8 @@ const QuizModal: React.FC<QuizModalProps> = ({  step, quizType, onStart, onNext,
     resultImageSrc = '/score_3.png';
     resultMemoText = (
       <>
-        <div>{name}님과 우정도 100% 입니다!</div>
-        <div>{name}님의 카카오톡으로 합격 부적을<br></br>
+        <div><span style={{color: '#1344EC'}}>광래♡혜민</span>님과 우정도 100% 입니다!</div>
+        <div>카카오톡으로 합격 부적을<br></br>
           캡쳐해서 보내주시면 소정의 상품을 드려요🩷</div>
       </>
     );
@@ -88,24 +87,17 @@ const QuizModal: React.FC<QuizModalProps> = ({  step, quizType, onStart, onNext,
       onReset();
     }
   };
-  const questions: { [key: number]: { question: string, answer: boolean }[] } = {
-    1: [
-      {question: '퀴즈시작', answer: true},
-      { question: '신랑의 가장 좋아하는 음식은 피자이다.', answer: true }, //step 1
-      { question: '신랑은 30세 미만이다.', answer: false },//step 2
-      { question: '신랑은 대학교에서 공학을 전공했다.', answer: true }, //step 3
-    ],
-    2: [
-      {question: '퀴즈시작', answer: true},
-      { question: '혜민이의 생일은 1월 2일이에요.', answer: true },
-      { question: '신부는 양말을 항상 흰색으로만 신는다. X', answer: false },
-      { question: '신부는 해양학을 전공했다.X', answer: false },
-    ],
-  };
+
+  const questions = [
+    { question: '퀴즈시작', answer: true },
+    { question: '광래와 혜민이는 고등학생 때 만났어요.', answer: true },
+    { question: '광래와 혜민이는 장거래 연애를 했어요.', answer: false },
+    { question: '연애 전 혜민이가 광래를 쫓아다녔어요', answer: true },
+  ];
 
   const handleAnswer = (userAnswer: boolean) => {
     setSelectedAnswer(userAnswer);
-    const correctAnswer = questions[quizType][step].answer;
+    const correctAnswer = questions[step].answer;
     if (userAnswer === correctAnswer) {
       setToastMessage('정답이에요😘');
       setIsCorrect(true);  // 정답
@@ -157,7 +149,7 @@ const QuizModal: React.FC<QuizModalProps> = ({  step, quizType, onStart, onNext,
         {step  !==0 && step <= 3 && (
           <QuizContentWrapper>
             <QuizStep>0{step}<span> /03</span></QuizStep>
-            <QuizContent>{questions[quizType][step]?.question}</QuizContent>
+            <QuizContent>{questions[step]?.question}</QuizContent>
             {step > 0 && (
               <BtnWrapper>
                 <TrueBtn

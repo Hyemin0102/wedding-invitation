@@ -68,11 +68,10 @@ function App() {
           <div style={{width: '80%'}}><img src="/test_title.png" alt="우정테스트"/></div>
           <Quiz/>
         </Wrapper>
-        {/*<Wrapper>*/}
-        {/*  <Guestbook />*/}
-        {/*</Wrapper>*/}
         <div style={{marginTop: "-60px"}}>
           <img style={{width: "100px", marginLeft: "20px"}} src="/footer.png" alt="마지막"/>
+          <div style={{color: '#000000'}}>여기까지 봐주셔서 감사합니다!</div>
+          <div style={{color: '#000000'}}>잘 살겠습니다 🥰</div>
         </div>
         <FloatingBar isVisible={isVisible}/>
       </Container>
