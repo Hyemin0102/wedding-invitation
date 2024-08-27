@@ -64,7 +64,7 @@ function App() {
           <Heading1 style={{paddingRight:'8px'}}><img src="/location.png" alt="지도"/></Heading1>
           <Location />
         </Wrapper>
-        <Wrapper style={{fontFamily:'Ownglyph_UNZ-Rg'}}>
+        <Wrapper style={{fontFamily:'Ownglyph_UNZ-Rg', marginTop:'-100px'}}>
           <div style={{width: '80%'}}><img src="/test_title.png" alt="우정테스트"/></div>
           <Quiz/>
         </Wrapper>
