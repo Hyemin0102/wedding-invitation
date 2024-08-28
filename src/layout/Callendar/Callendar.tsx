@@ -5,6 +5,7 @@ const Callendar = () => {
     <div style={{padding:"0 10px"}}>
       <div style={{marginRight:"4px"}}>
         <div style={{marginBottom: "10px"}}>
+          {/*<img src="/calendar_2.png" alt="wedding day"/>*/}
           <img style={{width: "80%"}} src="/wedding_day_text.png" alt="wedding day"/>
           <img style={{width: "80%"}} src="/wedding_day_date.png" alt="wedding day"/>
         </div>

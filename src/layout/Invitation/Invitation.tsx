@@ -9,7 +9,8 @@ const Invitation = () => {
   return (
     <InvitationWrapper>
       <div style={{marginBottom: '10px'}}>
-        <img style={{width: '95%'}} src='/invitation_img.png' alt="초대문구" />
+        <img style={{width: '80%'}} src='/aa.png' alt="리본" />
+        <img style={{width: '95%'}} src='/invitation_3.png' alt="초대문구" />
       </div>
       {/*<Paragraph>*/}
       {/*  <div>*/}
