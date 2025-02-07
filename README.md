@@ -1,15 +1,19 @@
-# 셀프 모바일 청첩장 만들기
+# 🌼셀프 모바일 청첩장 만들기🌼
 https://wedding-invitation-roan-gamma.vercel.app/
-
-
-
-
-
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 ---
-출처
+출처: https://github.com/heejin-hwang/mobile-wedding-invitation
+<br />
+<br />
 
-# 💌 Mobile Wedding Invitation 💌
+💌 Mobile Wedding Invitation 💌
 
 ![demo1.gif](demo1.gif)
 
